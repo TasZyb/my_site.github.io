@@ -1,0 +1,123 @@
+.row{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    /* background-image: url(https://static.tildacdn.com/tild3836-3539-4437-b136-333239376135/Group_1656-min.png); */
+}
+
+.facts{
+    margin-bottom: 20px;
+    padding: 30px 5px;
+    background-color: #D4145A;
+    width: 25%;
+    border-radius: 10px;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 2px solid red;
+}
+
+.border{
+    color:rgb(255, 115, 0);  
+  background-color: black;  
+  text-align: center;
+}
+
+.about{
+
+}
+.facts:hover{
+    transform: scale(110%) rotate(360deg);
+}
+.border{
+
+}
+.hobi_block{
+  margin: 10px auto;  
+  width: 40%;
+  border-radius: 10px;
+  background-color: brown;
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid black;
+  transition-duration: 0.2s;
+}
+.hobi_text{
+    width: 80%;
+    color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hobi_img{
+    width: 40%;
+}
+.hobi_h1{
+    color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hobi_block:hover{
+    transform: scale(105%);
+    background-color: brown;
+    border-radius: 240px;
+
+}
+.hobi_block:hover .hobi_img{
+    transform: scale(95%);
+}
+.delight{
+    text-align: center;
+    font-family: Arial;
+}
+.delight__row{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 200px;
+
+}
+.delight__circle{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    overflow:hidden;
+}
+.delight__img{
+    width:100%;
+}
+.delight__block:hover .delight__circle{
+    animation-name: animation1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.delight__block:hover .delight__text{
+    animation-name: animation2;
+    animation-duration: 1s;
+    /* animation-iteration-count: 1; */
+}
+
+@keyframes animation1 {
+    0%{
+        transform:translateY(0%);
+    }
+    50%{
+        transform:translateY(-10%);
+    }
+    100%{
+        transform:translateY(0%);
+    }
+}
+@keyframes animation2 {
+    0%{
+        transform:scale(100%);
+    }
+    50%{
+        transform:scale(100%);
+    }
+    100%{
+        transform:scale(110%);
+    }
+}
